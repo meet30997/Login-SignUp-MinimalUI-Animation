@@ -8,7 +8,7 @@ it is easy to animate scenes without a lot of code. Animations make your app loo
 
 
 # A Beautiful Animation!
-<br><img src="https://drive.google.com/uc?id=1IqeTFIn02xzi-7mH_MxipU1-toaNAxRT"/>
+<br><img src="https://drive.google.com/uc?id=1IqeTFIn02xzi-7mH_MxipU1-toaNAxRT"/><br><br> (It's more smoother than Gif in App😍)
 
 
 
