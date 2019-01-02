@@ -8,8 +8,9 @@ it is easy to animate scenes without a lot of code. Animations make your app loo
 
 
 # A Beautiful Animation!
-[![Watch the video](https://drive.google.com/uc?id=1LOsxPNLh7LTy6spjoYoJl2W7kHMFlKa1)](https://www.youtube.com/watch?v=4imoWEFBad8)
-
+<video width="320" height="240" controls>
+  <source src="MinimalUianimation.mp4" type="video/mp4">
+</video>
 
 
 
