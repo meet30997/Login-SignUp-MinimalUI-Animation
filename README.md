@@ -17,4 +17,4 @@ it is easy to animate scenes without a lot of code. Animations make your app loo
 Fork the project. 💖 Happy coding.:-)
 
 # License
-<b>This Project</b> is licensed under `MIT license`. View [license](LICENSE.md).
+<b>This Project</b> is licensed under `MIT license`. View [license](LICENSE).
