@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/conslone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp" android:id="@+id/cardView"
+            app:layout_constraintHorizontal_bias="0.0">
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView android:layout_width="wrap_content"
+              android:text="Sign in"
+              android:textSize="25sp"
+              app:layout_constraintRight_toRightOf="@id/textView2"
+              android:elevation="2dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="24dp"
+              app:layout_constraintTop_toTopOf="@+id/cardView"
+              android:id="@+id/textView"
+              android:layout_marginStart="24dp" app:layout_constraintStart_toStartOf="@+id/cardView"
+              app:layout_constraintBottom_toTopOf="@+id/textView2" android:layout_marginBottom="8dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:elevation="2dp"
+              app:layout_constraintTop_toBottomOf="@id/textView"
+              android:text="Username / Email address"
+              app:layout_constraintBottom_toTopOf="@id/editText"
+              android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/cardView"
+              app:layout_constraintStart_toStartOf="@+id/cardView"
+              android:id="@+id/textView2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+    <ImageView android:layout_width="25dp"
+               android:src="@drawable/ic_user"
+               android:elevation="2dp"
+               app:layout_constraintRight_toLeftOf="@id/editText"
+               android:layout_height="25dp"
+               app:layout_constraintStart_toStartOf="@+id/cardView"
+               android:layout_marginStart="8dp"
+               android:id="@+id/imageView2"
+               app:layout_constraintTop_toTopOf="@+id/editText"
+               app:layout_constraintBottom_toBottomOf="@+id/editText"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:backgroundTint="#d3d3d3"
+            app:layout_constraintBottom_toTopOf="@id/textView3"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            android:id="@+id/editText"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:elevation="2dp"
+              android:text="Password"
+              android:layout_height="wrap_content"
+              app:layout_constraintBottom_toTopOf="@id/editText2"
+              android:id="@+id/textView3"
+              android:layout_marginTop="16dp"
+              app:layout_constraintTop_toBottomOf="@+id/editText"
+              app:layout_constraintEnd_toEndOf="@+id/textView2" app:layout_constraintStart_toStartOf="@+id/textView2"/>
+    <ImageView android:layout_width="30dp"
+               android:src="@drawable/ic_locked"
+               android:elevation="2dp"
+               android:layout_height="30dp"
+               app:layout_constraintStart_toStartOf="@+id/cardView" android:layout_marginStart="8dp"
+               android:id="@+id/imageView3"
+               app:layout_constraintTop_toTopOf="@+id/editText2"
+               app:layout_constraintBottom_toBottomOf="@+id/editText2"
+               app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toTopOf="@id/ln1"
+            android:backgroundTint="#d3d3d3"
+            android:ems="10"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/editText2"
+            app:layout_constraintStart_toEndOf="@+id/imageView3" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:id="@+id/ln1"
+                  android:elevation="2dp"
+                  app:layout_constraintEnd_toEndOf="@id/cardView"
+                  app:layout_constraintTop_toBottomOf="@+id/editText2"
+                  app:layout_constraintStart_toStartOf="@id/cardView"
+                  app:layout_constraintBottom_toTopOf="@id/textView4"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginTop="24dp"
+                  android:layout_height="wrap_content">
+        <Button
+                android:layout_width="match_parent"
+                android:text="SIGN IN"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbtn"
+                android:id="@+id/button2"
+        />
+
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content"
+              android:elevation="2dp"
+              android:text="Forgot Password?"
+              app:layout_constraintBottom_toTopOf="@id/textView6"
+              android:textColor="@color/colorPrimary"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toStartOf="@+id/ln1" app:layout_constraintTop_toBottomOf="@+id/ln1"
+              android:layout_marginTop="16dp" android:id="@+id/textView4"
+              app:layout_constraintEnd_toStartOf="@+id/textView5" android:layout_marginEnd="8dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:elevation="2dp"
+              android:text="Create New Account"
+              android:textColor="@color/colorPrimary"
+              app:layout_constraintBottom_toBottomOf="@id/textView4"
+              android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/ln1"
+              app:layout_constraintStart_toEndOf="@+id/textView4"
+              android:layout_marginStart="8dp"
+              app:layout_constraintTop_toTopOf="@+id/textView4" android:id="@+id/textView5"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="-- OR --"
+              android:elevation="2dp"
+              android:textColor="#d3d3d3"
+              android:textSize="15sp"
+              app:layout_constraintBottom_toTopOf="@id/fbbtn"
+              android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView4"
+              android:layout_marginTop="16dp" android:id="@+id/textView6"
+    />
+
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/fbbtn"
+            android:background="@drawable/fbbtn"
+            app:layout_constraintTop_toBottomOf="@id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"/>
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/gbtn"
+            android:background="@drawable/gplusbtn"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            android:layout_marginEnd="16dp"/>
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/con2"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <include layout="@layout/signup_layout"
+             android:id="@+id/sign"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+
+
+    <include layout="@layout/login_layout"
+             android:id="@+id/login"
+             android:layout_height="0dp"
+             android:layout_width="0dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

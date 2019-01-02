@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:id="@+id/conslone"
+                                             android:layout_height="match_parent" tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:id="@+id/scardView"
+            app:layout_constraintHorizontal_bias="0.0">
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView android:layout_width="wrap_content"
+              android:text="Sign up"
+              android:textSize="25sp"
+              android:elevation="2dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="@+id/scardView"
+              android:id="@+id/stextView"
+              app:layout_constraintStart_toStartOf="@+id/scardView"
+              app:layout_constraintBottom_toTopOf="@+id/stextView2"
+              android:layout_marginTop="24dp"
+              app:layout_constraintEnd_toStartOf="@+id/stextView2"
+              android:layout_marginStart="24dp" android:layout_marginBottom="8dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:elevation="2dp"
+              android:text="Enter Username"
+              android:layout_height="17dp"
+              android:id="@+id/stextView2"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@id/stextView"
+              app:layout_constraintBottom_toTopOf="@id/seditText"
+              app:layout_constraintEnd_toEndOf="@+id/scardView"
+              app:layout_constraintStart_toStartOf="@+id/scardView"
+    />
+    <ImageView android:layout_width="25dp"
+               android:src="@drawable/ic_user"
+               android:elevation="2dp"
+               android:layout_height="25dp"
+               android:layout_marginStart="16dp"
+               android:id="@+id/simageView2"
+               app:layout_constraintRight_toLeftOf="@id/seditText"
+               app:layout_constraintStart_toStartOf="@+id/scardView"
+               app:layout_constraintTop_toTopOf="@+id/seditText"
+               app:layout_constraintBottom_toBottomOf="@+id/seditText"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:inputType="text"
+            android:backgroundTint="#d3d3d3"
+            app:layout_constraintTop_toBottomOf="@id/stextView2"
+            android:id="@+id/seditText"
+            app:layout_constraintEnd_toEndOf="@+id/scardView"
+            app:layout_constraintBottom_toTopOf="@id/semailtitle"
+            app:layout_constraintStart_toEndOf="@+id/simageView2"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:elevation="2dp"
+              android:text="Email address"
+              android:layout_height="wrap_content"
+              android:id="@+id/semailtitle"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/seditText"
+              app:layout_constraintEnd_toEndOf="@+id/stextView2"
+              app:layout_constraintBottom_toTopOf="@id/stextemail"
+              app:layout_constraintStart_toStartOf="@+id/stextView2"/>
+    <ImageView android:layout_width="25dp"
+               android:src="@drawable/ic_mail"
+               android:elevation="2dp"
+               app:layout_constraintRight_toLeftOf="@id/stextemail"
+               android:layout_height="25dp"
+               app:layout_constraintStart_toStartOf="@+id/scardView"
+               android:layout_marginStart="16dp"
+               android:id="@+id/semailimage"
+               app:layout_constraintTop_toTopOf="@+id/stextemail"
+               app:layout_constraintBottom_toBottomOf="@+id/stextemail"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#d3d3d3"
+            android:id="@+id/stextemail"
+            app:layout_constraintEnd_toEndOf="@+id/scardView"
+            app:layout_constraintStart_toEndOf="@+id/semailimage"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@id/stextView3"
+            app:layout_constraintTop_toBottomOf="@+id/semailtitle"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:elevation="2dp"
+              android:text="Password"
+              app:layout_constraintBottom_toTopOf="@id/seditText2"
+              android:layout_height="wrap_content"
+              android:id="@+id/stextView3"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/stextemail"
+              app:layout_constraintEnd_toEndOf="@+id/semailtitle"
+              app:layout_constraintStart_toStartOf="@+id/semailtitle"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:elevation="2dp"
+            android:backgroundTint="#d3d3d3"
+            android:ems="10"
+            android:id="@+id/seditText2"
+            app:layout_constraintBottom_toTopOf="@id/stextView7"
+            app:layout_constraintEnd_toEndOf="@+id/scardView"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/simageView3"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/stextView3"/>
+    <ImageView android:layout_width="30dp"
+               android:src="@drawable/ic_locked"
+               android:elevation="2dp"
+               android:layout_height="30dp"
+               android:id="@+id/simageView3"
+               app:layout_constraintEnd_toEndOf="@+id/simageView" app:layout_constraintStart_toStartOf="@+id/simageView"
+               app:layout_constraintBottom_toBottomOf="@+id/seditText2"
+               app:layout_constraintTop_toTopOf="@+id/seditText2"/>
+    <TextView
+            android:text="Country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stextView7"
+            android:textColor="@color/colorPrimary"
+            android:elevation="2dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@id/country"
+            app:layout_constraintRight_toRightOf="@id/country"
+            app:layout_constraintTop_toBottomOf="@+id/seditText2"
+            app:layout_constraintLeft_toLeftOf="@id/country"
+    />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_country"
+            android:id="@+id/simageView"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/country"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/stextView7"
+            app:layout_constraintStart_toStartOf="@+id/semailimage"
+            app:layout_constraintEnd_toEndOf="@+id/semailimage" android:layout_marginEnd="8dp"
+    />
+
+
+    <EditText
+            android:layout_width="0dp"
+            android:elevation="2dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/country"
+            android:inputType="text"
+            android:backgroundTint="#d3d3d3"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintEnd_toEndOf="@+id/stextView7"
+            app:layout_constraintStart_toStartOf="@+id/stextemail"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/stextView7"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/sln1"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_phone"
+            android:id="@+id/phoneimage"
+            android:elevation="2dp"
+            app:layout_constraintStart_toEndOf="@+id/country" android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/simageView"
+            app:layout_constraintTop_toTopOf="@+id/simageView" app:layout_constraintEnd_toStartOf="@+id/number"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="Phone"
+            android:elevation="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/stextView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/stextView3"
+            app:layout_constraintTop_toTopOf="@+id/stextView7"/>
+    <EditText
+            android:layout_width="0dp"
+            android:elevation="2dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:inputType="number"
+            android:backgroundTint="#d3d3d3"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/stextemail"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintStart_toEndOf="@+id/phoneimage"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/country"/>
+
+
+    <RelativeLayout android:layout_width="0dp"
+                    android:id="@+id/sln1"
+                    android:elevation="2dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/scardView"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintStart_toEndOf="@id/image"
+                    app:layout_constraintEnd_toEndOf="@+id/scardView"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/number"
+                    android:layout_marginTop="24dp" android:layout_marginStart="8dp">
+        <Button
+                android:layout_width="match_parent"
+                android:text="SIGN UP"
+                android:elevation="0dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbtn"
+                android:id="@+id/sbutton2"/>
+
+
+    </RelativeLayout>
+
+    <Button
+            android:layout_width="50dp"
+            android:id="@+id/image"
+            app:layout_constraintTop_toTopOf="@id/sln1"
+            android:background="@drawable/backbtn"
+            app:layout_constraintBottom_toBottomOf="@id/sln1"
+            app:layout_constraintEnd_toStartOf="@id/sln1"
+            app:layout_constraintStart_toStartOf="@id/scardView"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"/>
+</android.support.constraint.ConstraintLayout>
+
